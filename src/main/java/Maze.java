@@ -32,7 +32,7 @@ public class Maze {
 
                 //check if it's a path, wall, or destination
                 if (grid[row][col].getState() == 0) { //path
-                    p2.setBackground(Color.gray);
+                    p2.setBackground(Color.white);
                 } else if (grid[row][col].getState() == 1) { //wall
                     p2.setBackground(Color.darkGray);
                 } else if (grid[row][col].getState()==2){//destination

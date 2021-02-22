@@ -386,8 +386,8 @@ public class Search {
     /**
      * Calculate the manhattan distance from the current node to the goal node
      *
-     * @param curr
-     * @param goal
+     * @param curr  the current position in the maze
+     * @param goal  the end goal of the maze
      * @return the distance represented as an integer
      */
     private int manhattanDistance(GridObj curr, GridObj goal) {
@@ -398,9 +398,8 @@ public class Search {
 
     /**
      * Check if node is in the explored set
-     *
-     * @param x
-     * @param y
+     * @param x x coordinate
+     * @param y y coordinate 
      * @return true if in the set, false is not in the set
      */
     private boolean inExploredSet(int x, int y) {
@@ -471,7 +470,7 @@ public class Search {
                                     {1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1},
                                     {1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1}};
         
-        Search s = new Search(maze3);
+        Search s = new Search(maze2);
 
     }//end main()
 
